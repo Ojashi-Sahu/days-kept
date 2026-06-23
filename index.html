@@ -397,6 +397,9 @@ setInterval(render, 60000);
   renderUserBar();
   renderSignInButton();
 })();
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/days-kept/sw.js');
+}
 </script>
 </body>
 </html>
